@@ -22,12 +22,12 @@ def Animasi():
 
     print(f"Total frame ditemukan: {total_frames}")
 
-    frames = [{"jeneng_file": f, "wektu": 1/30} for f in files]
+    frames = [{"nama_file": f, "waktu": 1/30} for f in files]
 
     while True:
         start_time = time.time()
         for frame in frames:
-            frame_path = os.path.join(folder, frame["jeneng_file"])
+            frame_path = os.path.join(folder, frame["nama_file"])
             if os.path.exists(frame_path):
                 with open(frame_path, "r") as f:
                     content = f.read()
@@ -36,7 +36,7 @@ def Animasi():
                 sys.stdout.flush()
 
             elapsed_time = time.time() - start_time
-            sleep_time = frame["wektu"] - elapsed_time if frame["wektu"] > elapsed_time else 0
+            sleep_time = frame["waktu"] - elapsed_time if frame["waktu"] > elapsed_time else 0
             time.sleep(sleep_time)
 
             start_time = time.time()
