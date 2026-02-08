@@ -1,6 +1,6 @@
-# ASCII-ANIMATION
+# ASCII-Animation
 
-**ASCII-ANIMATION** adalah proyek seni ASCII bergerak yang berjalan di terminal menggunakan Python dengan library NumPy dan Pillow.
+**ASCII-Animation** adalah proyek seni ASCII bergerak yang berjalan di terminal menggunakan Python dengan library NumPy dan Pillow.
 
 ## Cara Install
 
@@ -8,7 +8,7 @@
 git clone https://github.com/irfanihbro/ascii-animation.git
 
 cd ascii-animation
-pip install -r requirements.txt
+pip install -r required.txt
 
 cd mode-jam-terbang  # atau chill-guy
 
